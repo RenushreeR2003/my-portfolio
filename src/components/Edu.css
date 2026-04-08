@@ -1,0 +1,168 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.section{
+    /* border: 2px solid rgb(28, 1, 1); */
+    width: 100%;
+    height: 900px;
+}
+.section #ed{
+    color: rgb(1, 10, 50);
+    font-size: 50px;
+    padding-top: 95px;
+    padding-left: 96px;
+}
+.text{
+     /* border: 2px solid red; */
+    width: 190%;
+    height: 700px;
+   padding-left: 90px;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+#clg{
+     border: 1px solid #85939c;
+    width: 95%;
+    height: 200px;
+    background-color: #ccdae2;
+    border-radius: 20px;
+    /* box-shadow: 1px 1px 20px #245a79; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 5px;
+}
+#pu{
+     border: 1px solid #85939c;
+    width: 95%;
+    height: 200px;
+    background-color: #ccdae2;
+    border-radius: 20px;
+    /* box-shadow: 1px 1px 20px #245a79; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 5px;
+}
+#hg{
+    border: 1px solid #85939c;
+    width: 95%;
+    height: 200px;
+    background-color: #ccdae2;
+    border-radius: 20px;
+    /* box-shadow: 1px 1px 20px #245a79; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 5px;
+}
+
+/* .text :hover{
+    box-shadow: 1px 1px 20px #245a79;
+} */
+
+
+h3{
+    color: rgb(56, 56, 56);
+    font-size: 17px;
+}
+
+h1{
+    font-size: 25px;
+}
+#ed{
+    margin-top: 60px;
+}
+
+
+
+
+/* ================= MOBILE (up to 600px) ================= */
+@media (max-width: 600px) {
+
+  .section {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .section #ed {
+    font-size: 28px;
+    padding-left: 20px;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .text {
+    width: 100%; /* FIX 190% issue */
+    height: auto;
+    padding-left: 0;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  #clg, #pu, #hg {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+}
+
+
+/* ================= TABLET (601px - 1024px) ================= */
+@media (max-width: 1024px) {
+
+  .section {
+    height: auto;
+  }
+
+  .section #ed {
+    font-size: 40px;
+    padding-left: 40px;
+  }
+
+  .text {
+    width: 100%; /* FIX */
+    padding-left: 40px;
+    padding-right: 20px;
+    gap: 40px;
+  }
+
+  #clg, #pu, #hg {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+
+/* ================= LARGE SCREEN FIX ================= */
+@media (min-width: 1025px) {
+
+  .text {
+    width: 190%; /* override 190% */
+  }
+
+}

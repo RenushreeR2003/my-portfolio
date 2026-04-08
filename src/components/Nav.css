@@ -1,0 +1,171 @@
+*{
+    color: black;
+    
+}
+.nav {
+  /* background:rgb(221, 214, 214); */
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  /* border: 2px solid rgb(115, 206, 242); */
+  border-radius: 5px;
+  box-shadow:1px 1px 20px#0d6294;
+
+  display: flex;
+  justify-content: center;
+  gap: 600px;
+  align-items: center;
+}
+
+.nav h2 {
+    color: #04144b;
+  height: inherit;
+  width:500px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+padding-left: 23px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+/* .nav h2:hover{
+  color: #04144b;
+  font-size: 40px;
+  text-shadow: 1px 1px 20px #0d6294;
+} */
+
+.nav #content {
+  height: inherit;
+  width: 500px;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: end;
+  /* gap: 5px; */
+  align-items: center;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.nav div a {
+  margin: 15px;
+  cursor: pointer;
+  color: rgb(74, 73, 73);
+  transition: 0.3s;
+}
+
+.nav div a:hover {
+  color: #04144b;
+  font-size: 20px;
+  text-shadow: 1px 1px 20px#0d6294;
+}
+
+#git{
+    /* border: 2px solid red; */
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #043a5a;
+    border-radius: 10px;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+      box-shadow:1px 1px 10px#0d6294;
+}
+#logo {
+  height: 50px;
+  transition: transform 0.3s ease;
+  /* border: 2px solid red; */
+  border-radius: 15px 90px;
+  box-shadow:1px 1px 10px #c0dcee;
+}
+
+#logo:hover {
+  transform: scale(1.1);
+}
+
+/* ================= MOBILE (up to 600px) ================= */
+@media (max-width: 600px) {
+
+  .nav {
+    flex-direction: column;
+    height: 100px;
+    /* padding: 10px; */
+    gap: 10px;
+  }
+
+  .nav h2 {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  .nav #content {
+    /* border: 1px solid red; */
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-top: 0%;
+    margin-bottom: 200px;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .nav div a {
+    margin: 5px;
+  }
+
+  #git {
+    width: auto;
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  #logo {
+    padding-top: 78px; 
+     height: 40px; 
+    border-radius: 10px;
+  }
+}
+
+
+/* ================= TABLET (601px - 1024px) ================= */
+@media (max-width: 1024px) {
+
+  .nav {
+    gap: 100px; /* reduce huge gap */
+    padding: 0 20px;
+  }
+
+  .nav h2 {
+    width: auto;
+    font-size: 22px;
+  }
+
+  .nav #content {
+    width: auto;
+    font-size: 14px;
+  }
+
+  .nav div a {
+    margin: 10px;
+  }
+}
+
+
+/* ================= LARGE SCREENS (default fix) ================= */
+@media (min-width: 1025px) {
+
+  .nav {
+    gap: 600px; /* instead of 600px (more flexible) */
+  }
+
+}

@@ -1,0 +1,277 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#skills{
+    /* border: 2px solid red; */
+    width: 194vh;
+    height: 200%;
+    margin-top: 400px;
+    padding-left: 100px;
+}
+
+#sk{
+    font-size: 50px;
+    color:  #043a5a;
+    padding-top: 95px;
+}
+#h3{
+    color: rgb(58, 58, 58);
+}
+
+#skill{
+    /* border: 2px solid red; */
+    width: 89%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#lag{
+    border: 1px solid #769aaf;
+    width: 40%;
+    height: 230px;
+    display: flex;
+    gap: 20px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+    background-color: #bfccd3;
+
+}
+#fra{
+    border: 1px solid #769aaf;
+    width: 40%;
+      height: 230px;
+    display: flex;
+    gap: 20px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    border-radius: 40px;
+    background-color: #bfccd3;
+}
+#tools{
+    border: 1px solid #769aaf;
+    width: 40%;
+      height: 230px;
+    display: flex;
+    gap: 20px;
+    padding-left: 60px;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+    background-color: #bfccd3;
+
+}
+#cer{
+    border: 1px solid #769aaf;
+    width: 43%;
+    height: 260px;
+    display: flex;
+    gap: 20px;
+    padding-left: 60px;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 3px;
+    border-radius: 40px;
+    background-color: #b5b6b7;
+    box-shadow: 1px 1px 15px rgb(86, 98, 118);
+}
+
+#lag h2{
+    color:  #043a5a;
+}
+
+#lag li{
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(58, 58, 58);
+    list-style: square;
+    
+}
+
+#lag li::marker {
+  color: rgb(8, 30, 97);
+}
+
+#fra h2{
+    color:  #043a5a;
+}
+
+.f{
+    color: #043a5a;
+}
+
+#fra li{
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(58, 58, 58);
+    list-style: square;
+    
+}
+#fra .te{
+    color:#043a5a;
+}
+#s{
+    color:#043a5a;
+}
+
+#tools h2{
+    color:  #043a5a;
+
+}
+
+#tools li{
+    font-size: 15px;
+    padding: 4px;
+    color: rgb(58, 58, 58);
+    list-style: square;
+    
+}
+
+#tools li::marker {
+  color: rgb(8, 30, 97);
+}
+
+#cer h2{
+    color:  #043a5a;
+
+}
+
+
+
+#cer li{
+    font-size: 15px;
+    padding: 20px;
+    color: rgb(58, 58, 58);
+    list-style: square;
+    
+    
+}
+
+#cer li{
+    text-decoration: none;
+    border: 1px solid rgb(8, 30, 97);
+    padding: 10px;
+    margin: 5px;
+   
+    border-radius: 40px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+#cer li:hover{
+    background-color: #769aaf;
+}
+
+#cer li::marker {
+  color: rgb(8, 30, 97);
+}
+
+
+
+
+/* ================= MOBILE (up to 600px) ================= */
+@media (max-width: 600px) {
+
+  #skills {
+    width: 100%; /* FIX 194vh */
+    height: auto;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #sk {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #skill {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  #lag, #fra, #tools, #cer {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #lag {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  #btn {
+    width: auto;
+  }
+
+  #cer li {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  #lag li, #fra li, #tools li {
+    font-size: 13px;
+  }
+}
+
+
+/* ================= TABLET (601px - 1024px) ================= */
+@media (max-width: 1024px) {
+
+  #skills {
+    width: 100%; /* FIX */
+    margin-top: 150px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  #sk {
+    font-size: 40px;
+    margin-top: 70%;
+  }
+#h3{
+    padding-left: 50px;
+}
+  #skill {
+    width: 100%;
+    height: auto;
+    gap: 40px;
+  }
+
+  #lag, #fra, #tools {
+    width: 45%;
+    height: auto;
+    padding-left: 30px;
+  }
+
+  #cer {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* ================= LARGE SCREEN FIX ================= */
+@media (min-width: 1025px) {
+
+  #skills {
+    width: 194vh; /* override 194vh */
+  }
+
+}
