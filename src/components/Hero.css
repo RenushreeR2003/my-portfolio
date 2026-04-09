@@ -54,7 +54,7 @@ p{
 }
 #left{
     /* border: 2px solid red; */
-    width: 90;
+    width: 970px;
     height: 400px;
     align-items:center ;
     padding: 50px;
@@ -221,7 +221,7 @@ i{
 @media (min-width: 1025px) {
 
   #home {
-    gap: 150px; /* reduce from 250 */
+    gap: 250px; /* reduce from 250 */
   }
 
   #left {
